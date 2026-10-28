@@ -2,40 +2,224 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CivLive</title>
-<link rel="stylesheet" href="style.css">
+<title>CivLive · An AI civilization evolving live</title>
+<meta name="description" content="A medieval civilization that runs by itself, live every day. Lone wanderers become bands, tribes, kingdoms and empires, led by AI rulers who explain every choice. Nothing is scripted.">
+<meta property="og:title" content="CivLive · An AI civilization evolving live">
+<meta property="og:description" content="Lone wanderers become bands, tribes, kingdoms and empires, led by AI rulers who explain every choice. Nothing is scripted.">
+<meta property="og:image" content="https://rburns2810.github.io/ai-civilization-live-site/img/share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0d1220">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&display=swap">
+<link rel="stylesheet" href="site.css">
 </head>
-<body><main>
-<h1>CivLive</h1>
-<p class="tag">An AI civilization that evolves on its own, streamed live on YouTube.</p>
-<p><a class="watch" href="https://www.youtube.com/@CivLive">Watch CivLive live on YouTube</a>
-&nbsp; <a href="guide.html">Read the rules of the valley →</a></p>
-<p>A procedurally generated valley of mountains, rivers and forests starts with a few scattered
-people. Over days of streaming they pair up, raise families and form bands, which grow into tribes,
-villages, chiefdoms, kingdoms and empires. They discover fire and farming, mine and work metal, invent
-new tools and weapons, develop cultures and faiths, trade, and go to war. Each people is led by an AI
-ruler who chooses a strategy and explains it on stream, and an AI narrator tells the story as it
-happens. Remarkable lives are remembered in the Hall of Legends.</p>
-<h2>Taking part</h2>
-<ul>
-<li><strong>Polls and omens:</strong> vote in chat polls (<code>!1</code> <code>!2</code>
-<code>!3</code>) to send a small omen, such as rain or a mild winter.</li>
-<li><strong>Naming:</strong> when a new band forms or a town is founded, suggest a name with
-<code>!name &lt;idea&gt;</code>, then vote for a favourite.</li>
-<li><strong>Predictions:</strong> call what happens next with <code>!predict</code> and earn points
-for the monthly leaderboard (<code>!top</code>).</li>
-<li><strong>Super Chats and Super Stickers</strong> are thanked on stream. A Super Chat can adopt a
-villager to follow through their life and family line (<code>!adopt</code>), or send a small
-blessing. These only tilt the odds a little; they never decide wars or wipe out a people.</li>
-<li><code>!help</code> lists everything else, and the <a href="guide.html#chat">full guide</a>
-explains every command.</li>
-</ul>
-<h2>How it works</h2>
-<p>The stream is produced automatically by a program running on the channel owner's computer. It
-manages the channel's own broadcasts and reads public live chat through the YouTube Data API using the
-channel owner's authorisation, and answers information commands like <code>!me</code> with short
-replies in chat. It never acts on viewers' accounts.</p>
-<p><a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of use</a></p>
-<footer>Contact: <a href="mailto:rburns2810@gmail.com">rburns2810@gmail.com</a></footer>
-</main></body>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="wrap">
+  <a class="brand" href="index.html"><img class="pixel" src="img/favicon.png" alt="" width="28" height="28"><span>CIVLIVE</span></a>
+  <nav class="nav" aria-label="Site"><a href="index.html" aria-current="page">Home</a><a href="guide.html">How it works</a><a href="about.html">About</a><a class="yt" href="https://www.youtube.com/@CivLive">Watch on YouTube</a></nav>
+</div></header>
+
+<main id="main">
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Live every day</p>
+    <h1 class="outlined">CIVLIVE</h1>
+    <p class="tagline">An AI civilization evolving live</p>
+    <p class="sub">Lone wanderers pair up, form bands and grow into tribes, villages, kingdoms and
+    empires. AI rulers make every choice and explain it on stream. Nothing is scripted.</p>
+    <div class="actions">
+      <a class="btn" href="guide.html">How the valley works</a>
+      <a class="textlink onart" href="https://www.youtube.com/@CivLive">Watch CivLive live on YouTube →</a>
+    </div>
+    <p class="when">On air daily at <strong>2 PM Eastern</strong> for about eight and a half hours<span id="local"></span></p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="band-head">
+      <p class="eyebrow">The ladder</p>
+      <h2>From one wanderer to empires</h2>
+      <p class="lead">Every people climbs by growing, discovering and settling, and falls back when it
+      loses towns or people. No one is handed a rung.</p>
+    </div>
+    <ol class="ladder">
+      <li><img class="pixel" src="img/sprites/villager.png" alt=""><strong>Wanderers</strong><span>Alone, foraging and looking for company</span></li>
+      <li><img class="pixel" src="img/sprites/band.png" alt=""><strong>Band</strong><span>Three who bond share a camp and a leader</span></li>
+      <li><img class="pixel" src="img/sprites/campfire.png" alt=""><strong>Tribe</strong><span>Twelve or more, with Fire and Language</span></li>
+      <li><img class="pixel" src="img/sprites/home.png" alt=""><strong>Village</strong><span>Farming lets a tribe settle its first town</span></li>
+      <li><img class="pixel" src="img/sprites/tower.png" alt=""><strong>Chiefdom</strong><span>Two towns, armies and treaties</span></li>
+      <li><img class="pixel" src="img/sprites/hall.png" alt=""><strong>Kingdom</strong><span>Writing, three towns and a crown</span></li>
+      <li><img class="pixel" src="img/sprites/wonder.png" alt=""><strong>Empire</strong><span>Six towns and the top of the ladder</span></li>
+    </ol>
+    <p class="actions"><a class="textlink" href="guide.html#ladder">What each rung takes →</a></p>
+  </div>
+</section>
+
+<section class="band alt">
+  <div class="wrap">
+    <div class="band-head">
+      <p class="eyebrow">Real frames from the show</p>
+      <h2>Day 950 in the valley</h2>
+      <p class="lead">Eighty years in, 1,277 people lived across 46 towns. These frames are straight
+      from the stream: a revolt that toppled a ruler, two sieges, and the Valley Almanac.</p>
+    </div>
+    <div class="shots">
+      <figure>
+        <img src="img/shots/overthrown.jpg" alt="The walled town of Millfield on a pixel-art map, with a banner reading: Overthrown! The rebels of Millfield topple Davin the Hammer." width="1280" height="720" loading="lazy">
+        <figcaption><strong>Overthrown.</strong> The rulers never answered them, so the rebels of
+        Millfield toppled Davin the Hammer. Savin now rules the Indigo Chiefdom with a council.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/shots/towns.jpg" alt="A walled capital and a besieged hamlet on the map, surrounded by ruins of older towns." width="1280" height="720" loading="lazy">
+        <figcaption><strong>The siege of Ironmoor.</strong> Cerulean soldiers at the gates, among the
+        ruins of towns that came before.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/shots/siege.jpg" alt="Two walled towns marked with protests, and an army fighting at a village between them." width="1280" height="720" loading="lazy">
+        <figcaption><strong>Protest and war at once.</strong> Russet soldiers fight at the gates of
+        Dunfield while its neighbours protest.</figcaption>
+      </figure>
+    </div>
+    <div class="almanac">
+      <img src="img/shots/almanac-storylines.jpg" alt="Almanac page listing storylines, heroes, villains and great houses." width="1280" height="720" loading="lazy">
+      <img src="img/shots/almanac-relations.jpg" alt="Almanac page of relations between peoples: wars, vassals and alliances." width="1280" height="720" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="band-head">
+      <p class="eyebrow">What runs the world</p>
+      <h2>A whole medieval world, simulated</h2>
+      <p class="lead">Dozens of systems run side by side, and every story on screen grows out of them.</p>
+    </div>
+    <div class="cards">
+      <a class="card" href="guide.html#leaders"><img class="pixel" src="img/sprites/hall.png" alt="">
+        <h3>AI rulers who explain themselves</h3>
+        <p>Each people's ruler has a personality, an ambition and a plan. Every choice comes with its reasons, shown on stream.</p>
+        <span class="more">Leaders and ambitions →</span></a>
+      <a class="card" href="guide.html#people"><img class="pixel" src="img/sprites/villager.png" alt="">
+        <h3>Lineage and reputation</h3>
+        <p>Genes, skills and fortunes pass to children. Great houses rise, heroes and villains earn their names, and blood feuds outlive the people who started them.</p>
+        <span class="more">People and lineage →</span></a>
+      <a class="card" href="guide.html#discovery"><img class="pixel" src="img/sprites/spark.png" alt="">
+        <h3>Discovery by doing</h3>
+        <p>Fire comes from cold nights, farming from foraging the same patches. Later come iron, printing, clockwork and gunpowder.</p>
+        <span class="more">Discovery and knowledge →</span></a>
+      <a class="card" href="guide.html#economy"><img class="pixel" src="img/sprites/market.png" alt="">
+        <h3>Markets, coin and greed</h3>
+        <p>Prices follow supply and demand. Rulers tax, borrow and debase the coin, caravans walk the roads, and famine breeds thieves and profiteers.</p>
+        <span class="more">Markets and coin →</span></a>
+      <a class="card" href="guide.html#culture"><img class="pixel" src="img/sprites/obelisk.png" alt="">
+        <h3>Faiths and creeds</h3>
+        <p>Prophets found religions, schisms split them, and in a crisis a Chosen One may rise. Six ideologies compete for every people.</p>
+        <span class="more">Culture and faith →</span></a>
+      <a class="card" href="guide.html#war"><img class="pixel" src="img/sprites/catapult.png" alt="">
+        <h3>War and sieges</h3>
+        <p>Armies march the real map with the best arms they can pay for. Walls hold, catapults batter them, and towns change hands.</p>
+        <span class="more">War →</span></a>
+      <a class="card" href="guide.html#turmoil"><img class="pixel" src="img/sprites/bang.png" alt="">
+        <h3>Uprisings and intrigue</h3>
+        <p>Angry towns protest and revolt. Pretenders claim thrones, rival houses stage coups, and assassins strike in the night.</p>
+        <span class="more">Unrest and intrigue →</span></a>
+      <a class="card" href="guide.html#outlaws"><img class="pixel" src="img/sprites/banner.png" alt="">
+        <h3>Outlaws and bandit kings</h3>
+        <p>The desperate take to the woods. Gangs grow into warbands and hordes, hire out as mercenaries, or seize a town and crown their own king.</p>
+        <span class="more">Outlaws →</span></a>
+      <a class="card" href="guide.html#land"><img class="pixel" src="img/sprites/wolf.png" alt="">
+        <h3>A living land</h3>
+        <p>Herds migrate, wolves hunt, soil tires and forests regrow. Plague, floods, blizzards and locusts leave their mark for years.</p>
+        <span class="more">Land and nature →</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="band alt">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">Taking part</p>
+      <h2>Chat can sway the valley</h2>
+      <p class="lead">Type commands in the live chat. They're free.</p>
+      <ul class="cmdlist">
+        <li><code>!1 !2 !3</code><span>Vote in the open round: an omen, a name, or a ruler's decision</span></li>
+        <li><code>!name &lt;idea&gt;</code><span>Name a new band or town</span></li>
+        <li><code>!predict &lt;choice&gt;</code><span>Call what happens next and climb the monthly leaderboard</span></li>
+        <li><code>!root &lt;name&gt;</code><span>Back a hero or a villain</span></li>
+        <li><code>!story</code><span>The storylines unfolding now</span></li>
+        <li><code>!help</code><span>Everything else</span></li>
+      </ul>
+    </div>
+    <div>
+      <h3>The people decide</h3>
+      <p class="muted">When a ruler faces a bold choice, such as war or peace, or crushing a revolt or
+      giving in, chat may get a minute to choose for them. If chat votes, its choice stands.</p>
+      <h3>Omens</h3>
+      <p class="muted">Every so often chat picks an omen for the valley: gentle rain, a mild winter,
+      plentiful herds. Busy chat wakes the spirits sooner.</p>
+      <h3>Super Chats</h3>
+      <p class="muted">Super Chats and Super Stickers are thanked on stream. One can adopt a villager
+      to follow through their life and family line (<code>!adopt</code>), or send a small blessing.
+      These only tilt the odds a little; they never decide wars or wipe out a people.</p>
+      <p><a class="textlink" href="guide.html#chat">Every command explained →</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="band-head">
+      <p class="eyebrow">Honest by design</p>
+      <h2>Real stories, told as they happen</h2>
+    </div>
+    <div class="promises">
+      <div><h3>Nothing is scripted</h3><p>Storylines open, turn and close only on things that really
+      happen in the simulation. Even quiet stretches end by the world's own rules.</p></div>
+      <div><h3>AI, and it says so</h3><p>The rulers' choices and the narration are AI-generated, and
+      the stream says so on screen. When the AI is unavailable, a rule-based council decides.</p></div>
+      <div><h3>How the show runs</h3><p>The stream is produced automatically by a program running on the
+      channel owner's computer. It manages the channel's own broadcasts and reads public live chat
+      through the YouTube Data API using the channel owner's authorisation, and answers information
+      commands like <code>!me</code> with short replies in chat. It never acts on viewers' accounts.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2 class="outlined">The valley is waiting</h2>
+    <p>Every visit finds it further along.</p>
+    <div class="actions">
+      <a class="btn" href="guide.html">Read the rules of the valley</a>
+      <a class="textlink onart" href="https://www.youtube.com/@CivLive">Watch CivLive live on YouTube →</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-foot"><div class="wrap">
+  <div class="about">
+    <a class="brand" href="index.html"><img class="pixel" src="img/favicon.png" alt="" width="28" height="28"><span>CIVLIVE</span></a>
+    <p>An AI civilization evolving live, daily at 2 PM ET.</p>
+    <p>Narration and leaders are AI-generated.</p>
+  </div>
+  <div><h4>The show</h4><ul>
+    <li><a href="https://www.youtube.com/@CivLive">Watch CivLive live on YouTube</a></li>
+    <li><a href="guide.html">How it works</a></li>
+    <li><a href="guide.html#chat">Taking part</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul></div>
+  <div><h4>The small print</h4><ul>
+    <li><a href="privacy.html">Privacy policy</a></li>
+    <li><a href="terms.html">Terms of use</a></li>
+    <li><a href="mailto:rburns2810@gmail.com">rburns2810@gmail.com</a></li>
+  </ul></div>
+</div></footer>
+<script src="site.js"></script>
+</body>
 </html>
